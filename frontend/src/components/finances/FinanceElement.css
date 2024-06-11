@@ -1,0 +1,21 @@
+.finance-element-container {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.finance-element-price {
+  color: #1b9a3d;
+}
+
+.finance-element-price::after {
+  content: " ₽";
+}
+
+.finances-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}

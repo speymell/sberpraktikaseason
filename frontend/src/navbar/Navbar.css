@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+:root {
+  --hover-color: #a8ff63;
+  --active-color: #5eb436;
+  --animation-duration: 0.1s;
+}
+
+.text {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+button {
+  background: transparent;
+  background-color: transparent;
+  border: none;
+}
+
+nav {
+  display: flex;
+  padding-inline: 20px;
+  padding-block: 16px;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Montserrat", sans-serif;
+}
+
+.header-links {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 56px;
+  font-size: 24px;
+}
+
+.header-links img {
+  display: block;
+}
+
+.header-links__list {
+  list-style-type: none;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  column-gap: 56px;
+}
+
+.header-links__list-element a {
+  text-decoration: none;
+  color: white;
+  transition: color var(--animation-duration) ease;
+}
+
+.header-links__list-element a:hover {
+  color: var(--hover-color);
+}
+
+.header-links__list-element a:focus {
+  color: var(--active-color);
+  outline: none;
+}
+
+.header-buttons {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 28px;
+  position: relative;
+}
+
+.header-buttons button {
+  cursor: pointer;
+}
+
+.header-buttons img {
+  display: block;
+}
+
+.header-links__list-element.active a {
+  color: var(--active-color);
+}
+
+.header-buttons__username {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: white;
+}
+.dropdown-menu {
+  position: absolute;
+  top: 120%;
+  color: white;
+  right: 0;
+  background-color: #121212;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border: 1px solid #232222;
+  padding: 20px 30px;
+  display: none;
+}
+
+.header-buttons .dropdown-menu {
+  display: block;
+}
+
+@media (max-width: 1360px) {
+  nav {
+    padding-inline: 15px;
+    padding-block: 12px;
+  }
+  .header-links {
+    column-gap: 25px;
+    font-size: 20px;
+  }
+
+  .header-links__list {
+    gap: 25px;
+  }
+
+  .header-buttons {
+    column-gap: 20px;
+  }
+  .header-buttons__username {
+    font-size: 20px;
+  }
+
+  .dropdown-menu {
+    font-size: 20px;
+    padding: 15px 22.5px;
+  }
+}
+
+@media (max-width: 960px) {
+  .header-logo {
+    display: block;
+    width: calc(131px / 2);
+    height: calc(43px / 2);
+  }
+  .pages-header {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .user-logo {
+    display: block;
+    width: calc(60px / 2);
+    height: calc(60px / 2);
+  }
+  /* .header-links__list {
+    flex-wrap: wrap;
+  } */
+}
+
+@media (max-width: 760px) {
+  nav {
+    padding-inline: 10px;
+    padding-block: 8px;
+  }
+  .header-links {
+    column-gap: 20px;
+    font-size: 16px;
+  }
+  .header-buttons {
+    column-gap: 15px;
+  }
+  .header-buttons__username {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 550px) {
+  .header-links {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  nav {
+    padding-inline: 5px;
+    padding-block: 5px;
+  }
+  .header-links {
+    column-gap: 10px;
+    font-size: 12px;
+  }
+  .header-buttons {
+    column-gap: 10px;
+  }
+  .header-buttons__username {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,293 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+.estate-add-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  margin-bottom: 60px;
+}
+
+.estate-add-container {
+  display: flex;
+  background-color: #121212;
+  width: 1120px;
+  padding-block: 30px;
+  border-radius: 15px;
+  padding-inline: 26px;
+  flex-direction: row;
+  box-sizing: border-box;
+  box-shadow: 0 4px 0px #000;
+  justify-content: space-between;
+  transition: background-color var(--animation-duration) ease-in;
+  transition: padding var(--animation-duration) ease;
+  color: white;
+}
+
+.estate-add-left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.estate-right-buttons.clients {
+  display: flex;
+  flex-direction: column;
+}
+
+.estate-add-right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+textarea {
+  margin-block: 10px;
+  padding-block: 30px;
+}
+
+.estate-add-wrapper textarea.estate-element-description {
+  border: 1px solid rgb(112, 105, 105);
+  height: 300px;
+  border-radius: 10px;
+  padding: 10px;
+  width: 100%;
+  word-break: unset;
+}
+
+.estate-add-wrapper input[type="file"] {
+  border: none;
+}
+.estate-add-wrapper input,
+.estate-add-wrapper select {
+  width: 50%;
+  border-bottom: 1px solid white;
+  margin: 10px 0px 30px 0px;
+  color: #939393;
+  transition: padding var(--transition-duration);
+}
+
+.estate-add-wrapper input:focus {
+  border-color: var(--base-color-active);
+  padding-bottom: 10px;
+
+  outline-width: none;
+}
+
+input[type="file"]::file-selector-button {
+  margin-right: 20px;
+  border: none;
+  background: #084cdf;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+input[type="file"]::file-selector-button:hover {
+  background: #0d45a5;
+}
+
+.estate-right-buttons button {
+  padding: 10px 40px;
+  border-radius: 20px;
+  background-color: green;
+}
+
+.estate-add-left button {
+  padding: 10px 40px;
+  border-radius: 20px;
+  width: 200px;
+  background-color: #5eb436;
+}
+.estate-add-left button:hover {
+  background-color: green;
+  color: #000;
+}
+
+.estate-add-left a {
+  text-decoration: none;
+}
+
+.estate-add-left a:hover {
+  color: white;
+}
+
+.estate-right-buttons button.estate-add-cancel {
+  background-color: red;
+}
+.estate-right-buttons button.estate-add-cancel:hover {
+  background-color: rgb(188, 20, 20);
+}
+
+.estate-right-buttons button {
+  padding: 10px 40px;
+  border-radius: 20px;
+  background-color: green;
+}
+.estate-right-buttons button:hover {
+  background-color: rgb(12, 169, 12);
+}
+
+input.input-file {
+  width: 100%;
+}
+
+.estate-add-left__info div:last-child {
+  color: #939393;
+}
+.estate-add-left__info {
+  display: flex;
+  gap: 20px;
+}
+
+.estate-price::after {
+  content: " ₽";
+}
+
+.estate-add-container.list-form.data {
+  box-shadow: none;
+}
+
+.estate-element-email {
+  display: flex;
+  flex-direction: row;
+}
+
+.estate-add-images {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.estate-add-left.list-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 10px;
+}
+
+select {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-block: 20px;
+}
+
+select option {
+  color: black;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+select option:hover {
+  background-color: #f0f0f0;
+  color: #666;
+}
+
+select option:selected {
+  background-color: #ccc;
+  color: #333;
+}
+
+.estate-add-left.list-form button {
+  margin-top: 60px;
+}
+
+.estate-add-right.list-form {
+  align-items: end;
+}
+
+.estate-right-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+@media (max-width: 1360px) {
+  .estate-add-container {
+    width: 90%;
+  }
+  .estate-add-left,
+  .estate-add-right {
+    width: 45%;
+  }
+  textarea {
+    height: 250px;
+  }
+  input[type="file"]::file-selector-button {
+    padding: 8px 15px;
+  }
+  .estate-right-buttons button {
+    padding: 8px 30px;
+  }
+
+  .estate-add-container,
+  .estate-add-container button,
+  .estate-add-container input {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .estate-right-buttons {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 760px) {
+  .estate-add-container {
+    width: 80%;
+  }
+  .estate-add-left,
+  .estate-add-right {
+    width: 40%;
+  }
+  textarea {
+    height: 200px;
+  }
+  input[type="file"]::file-selector-button {
+    padding: 6px 10px;
+  }
+  .estate-right-buttons button {
+    padding: 6px 20px;
+  }
+  .estate-add-container,
+  .estate-add-container button,
+  .estate-add-container input {
+    font-size: 14px;
+  }
+
+  .estate-add-container button {
+    padding: 6px 8px;
+  }
+}
+
+@media (max-width: 460px) {
+  .estate-add-container,
+  .estate-add-container button,
+  .estate-add-container input {
+    font-size: 10px;
+  }
+}
+
+.estate-add-container.finances {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.estate-add-container.finances h2 {
+  color: rgb(198, 17, 44);
+}
+
+.estate-add-wrapper .add-date input {
+  width: 100%;
+}

@@ -1,0 +1,66 @@
+.company-button {
+  font-family: inherit;
+  color: inherit;
+  padding: 6px 28px;
+  font-size: 32px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-right: 1rem;
+  color: white;
+  border: 1px solid #fff;
+}
+
+.company-button:hover {
+  opacity: 0.8s;
+}
+
+.company-button.active {
+  color: #5eb436;
+  border: 1px solid #5eb436;
+}
+
+Open In Editor Edit Copy code .company-button {
+  font-family: inherit;
+  color: inherit;
+  padding: 6px 28px;
+  font-size: 32px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-right: 1rem;
+  color: white;
+  border: 1px solid #fff;
+}
+
+.company-button:hover {
+  opacity: 0.8s;
+}
+
+.company-button.active {
+  color: #5eb436;
+  border: 1px solid #5eb436;
+}
+
+@media (max-width: 1360px) {
+  .company-button {
+    padding: 4px 20px;
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 760px) {
+  .company-button {
+    padding: 2px 15px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .company-button {
+    padding: 1px 10px;
+    font-size: 14px;
+  }
+}

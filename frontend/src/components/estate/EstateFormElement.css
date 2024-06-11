@@ -1,0 +1,16 @@
+.estate-element {
+  display: flex;
+  background-color: #121212;
+  width: 1120px;
+  height: 230px;
+  border-radius: 15px;
+  padding: 26px;
+  flex-direction: row;
+  align-items: center;
+  box-sizing: border-box;
+  box-shadow: 0 4px 0px #000;
+  justify-content: space-between;
+  transition: background-color var(--animation-duration) ease-in;
+  transition: padding var(--animation-duration) ease;
+  color: white;
+}
